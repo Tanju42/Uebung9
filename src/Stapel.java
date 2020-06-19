@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Stapel {
 
-    Stack<Point> stapel = new Stack<>();
+    OwnStack stapel = new OwnStack();
 
     Scanner kbdInput = new Scanner(System.in);
     public static void main(String[] args) {
