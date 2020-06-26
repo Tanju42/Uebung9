@@ -1,12 +1,12 @@
-import java.text.DecimalFormat;
 import java.util.Scanner;
-import java.util.Stack;
 
 public class Stapel {
 
-    OwnStack stapel = new OwnStack();
-
     Scanner kbdInput = new Scanner(System.in);
+
+    Stack stapel = new Stack();
+
+
     public static void main(String[] args) {
         Stapel stapelManager = new Stapel();
         stapelManager.run();
@@ -24,8 +24,7 @@ public class Stapel {
             case "o":
                 System.out.println("> Ausgabe:");
                 while( !stapel.isEmpty() ) {
-                    stapel.peek().print();
-                    stapel.pop();
+                    stapel.pop().print();
                 }
                 return;
 
